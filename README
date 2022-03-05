@@ -1,0 +1,19 @@
+Simionescu Marina-Ilariana, 322CD
+
+Clasele de tip Serializer("ConsumerSerializer", "ContractSerializer", "DistributorSerializer")
+afiseaza in fisierele de iesire, intr-un vector, obiectele rezultate in
+urma rularii aplicatiei. Acestea suprascriu metoda "serialize"
+din clasa "StdSerializer".
+
+In clasa "Simulation", metoda "simulate" verifica daca in fisierele de intrare exista noutati
+in ceea ce priveste costurile distribuitorilor(daca exista, aplica aceste schimbari asupra
+distribuitorilor) sau numarul de consumatori(daca in joc au mai fost adaugati consumatori).
+In metoda "simulateNextMonth" consumatorilor le este adaugat venitul lunar, isi aleg un
+distribuitor, platesc factura catre acesta. Daca, in timpul jocului, unul dintre consumatori
+ajunge la faliment, acesta este scos din joc.
+
+Am folosit "@JsonAlias" pentru a folosi aceeasi variabila indiferent ca vorbim de varianta finala
+sau initiala a acesteia.
+
+
+
